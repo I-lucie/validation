@@ -1,0 +1,6 @@
+<!-- validation/templates/validation/register_vehicle.html -->
+<form method="post" action="{% url 'vehicles' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Register Vehicle</button>
+</form>
